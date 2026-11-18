@@ -1,0 +1,4 @@
+# dsh bundle layer: mount the composer quick-prompt picker.
+- insert:
+    - id: quick-prompts
+      name: 'dsh-quick-prompts'

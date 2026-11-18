@@ -1,0 +1,48 @@
+{
+  "name": "dsh-quick-prompts",
+  "version": "0.1.0",
+  "description": "Reusable prompt presets in the DeepSeek Harness composer: pick one, it is inserted at the caret and focus returns to the input.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "slots"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "prompts",
+    "composer"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuanyuanzhang0815/dsh-quick-prompts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yuanyuanzhang0815/dsh-quick-prompts/issues"
+  },
+  "homepage": "https://github.com/yuanyuanzhang0815/dsh-quick-prompts#readme",
+  "author": "Yuanyuan Zhang",
+  "license": "MIT"
+}
