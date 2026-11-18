@@ -1,11 +1,7 @@
 MIT License
 
 Copyright (c) 2026 Yuanyuan Zhang
-
-Portions of client.js are derived from dsh-prompt-chips
-(https://github.com/yunxiao11xie/dsh-prompt-chips), MIT License:
-
-Copyright (c) 2026 yunxiao11xie
+Portions Copyright (c) 2026 yunxiao11xie (dsh-prompt-chips)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

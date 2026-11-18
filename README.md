@@ -110,4 +110,4 @@ keyboard navigation already worked. What changed here:
 
 ## License
 
-MIT — see [LICENSE](LICENSE), which also carries the upstream copyright notice.
+MIT — see [LICENSE](LICENSE), which also carries the upstream `dsh-prompt-chips` copyright.
