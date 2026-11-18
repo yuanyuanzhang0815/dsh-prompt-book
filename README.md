@@ -14,9 +14,10 @@ so you keep typing and press `Enter` to send. It never sends anything by itself.
 dsh plugin --profile web add github:yuanyuanzhang0815/dsh-quick-prompts
 ```
 
-Then verify that `dsh-quick-prompts` is listed in `~/.dsh/profiles/web/package.json`
-under `dsh.profile.bundles`; the running profile reconciles the new bundle on its
-own. Restart `dsh` if the plugin does not appear.
+`dsh plugin add` registers the bundle in your profile automatically; the running
+profile then reconciles it on its own. Restart `dsh` only if the button does not
+appear. Installed from GitHub there is no build step: `client.js` is plain
+browser JavaScript, loaded by the module loader inside the web app.
 
 For local development, link a checkout instead:
 
