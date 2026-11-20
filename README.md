@@ -96,6 +96,12 @@ restored through the DOM, because the contract has no `focus()`; the insertion
 survives the re-render that follows because the caret is re-asserted on the next
 animation frame.
 
+## Releasing
+
+`scripts/publish.sh` publishes to `registry.npmjs.org` (the machine's default
+registry is a read-only mirror). Log in once with
+`npm login --registry=https://registry.npmjs.org`; `--dry-run` works without it.
+
 ## Credits
 
 Forked from [`dsh-prompt-chips`](https://github.com/yunxiao11xie/dsh-prompt-chips)
