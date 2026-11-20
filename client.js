@@ -1,4 +1,4 @@
-// Browser half of dsh-quick-prompts: a "quick prompt" picker that sits in the
+// Browser half of dsh-prompt-book: a "quick prompt" picker that sits in the
 // composer tool row (after the permission picker, before the submit button).
 //
 // Hand-written in the lazy-CJS bundle protocol (window.__ModuleLoader__.load):
@@ -11,7 +11,7 @@
 // way. There is no separate editor page and no footer of text actions. Everything
 // is stored in this browser's localStorage only.
 window.__ModuleLoader__.load({
-  id: 'dsh-quick-prompts',
+  id: 'dsh-prompt-book',
   factory: (require) => {
     var module = { exports: {} }
     var exports = module.exports
@@ -25,7 +25,7 @@ window.__ModuleLoader__.load({
 
     var STORAGE_KEY = 'dsh-quick-prompts.presets.v2'
     var LEGACY_KEY = 'dsh-quick-prompts.presets.v1'
-    var STYLE_ID = 'dsh-quick-prompts-style'
+    var STYLE_ID = 'dsh-prompt-book-style'
     var MENU_WIDTH = 520
     var MENU_GAP = 8
 

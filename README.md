@@ -1,4 +1,4 @@
-# dsh-quick-prompts
+# dsh-prompt-book
 
 Reusable prompt presets inside the [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)
 (`dsh`) composer. One notebook button in the composer tool row — between the
@@ -11,7 +11,7 @@ so you keep typing and press `Enter` to send. It never sends anything by itself.
 ## Install
 
 ```bash
-dsh plugin --profile web add github:yuanyuanzhang0815/dsh-quick-prompts
+dsh plugin --profile web add github:yuanyuanzhang0815/dsh-prompt-book
 ```
 
 `dsh plugin add` registers the bundle in your profile automatically; the running
@@ -22,10 +22,10 @@ browser JavaScript, loaded by the module loader inside the web app.
 For local development, link a checkout instead:
 
 ```bash
-dsh plugin --profile web add "link:$HOME/.dsh/plugins/dsh-quick-prompts"
+dsh plugin --profile web add "link:$HOME/.dsh/plugins/dsh-prompt-book"
 ```
 
-Remove with `dsh plugin --profile web remove dsh-quick-prompts` and drop the
+Remove with `dsh plugin --profile web remove dsh-prompt-book` and drop the
 `dsh.profile.bundles` entry.
 
 ## What ships in the box
@@ -73,7 +73,8 @@ thinking prompts rather than fixed commands:
 ## Storage
 
 Everything the user changes lives in the browser, not on disk:
-`localStorage['dsh-quick-prompts.presets.v2']` holds the **whole list** as
+`localStorage['dsh-quick-prompts.presets.v2']` (the key keeps its original name so
+lists saved before the rename survive) holds the **whole list** as
 `[{ id, label, content }]`, so it can grow and shrink. A row with an empty body is
 skipped when picked. The older positional key `…presets.v1` is read once and
 migrated on the next save. Clear both keys to get the shipped fourteen back.
@@ -81,7 +82,7 @@ migrated on the next save. Clear both keys to get the shipped fourteen back.
 ## How it plugs into dsh
 
 - `index.js` — host entry, a no-op `apply()`; the plugin is client-only.
-- `cordis.patch.yml` — inserts the bundle as `quick-prompts`.
+- `cordis.patch.yml` — inserts the bundle as `prompt-book`.
 - `client.js` — the whole UI: styles, preset store, menu, inline row editor,
   pointer-drag reordering with a FLIP animation.
 - `package.json` — `dsh.client` declares `inject: ['slots']`, `platform: 'web'`,

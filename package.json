@@ -1,5 +1,5 @@
 {
-  "name": "dsh-quick-prompts",
+  "name": "dsh-prompt-book",
   "version": "0.1.0",
   "description": "Reusable prompt presets in the DeepSeek Harness composer: pick one, it is inserted at the caret and focus returns to the input.",
   "type": "module",
@@ -37,12 +37,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yuanyuanzhang0815/dsh-quick-prompts.git"
+    "url": "git+https://github.com/yuanyuanzhang0815/dsh-prompt-book.git"
   },
   "bugs": {
-    "url": "https://github.com/yuanyuanzhang0815/dsh-quick-prompts/issues"
+    "url": "https://github.com/yuanyuanzhang0815/dsh-prompt-book/issues"
   },
-  "homepage": "https://github.com/yuanyuanzhang0815/dsh-quick-prompts#readme",
+  "homepage": "https://github.com/yuanyuanzhang0815/dsh-prompt-book#readme",
   "author": "Yuanyuan Zhang",
   "license": "MIT"
 }
